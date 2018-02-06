@@ -29,74 +29,74 @@
   <xacro:property name="wrist_2_cog" value="-0.00021 0.00112 0.002269" />
   <xacro:property name="wrist_3_cog" value="0 -0.001156 -0.00149" />
 
-  <!-- Kinematic model -->
+    <!-- Kinematic model -->
   <!-- Properties from urcontrol.conf -->
   <!-- When applying parameters keep in mind that the parameters are in CS base, not base_link, that is why some minuses appear -->
-  <property name="ur10_a1" value="0.0" />
-  <property name="ur10_a2" value="-0.612" />
-  <property name="ur10_a3" value="-0.5723" />
-  <property name="ur10_a4" value="0.0" />
-  <property name="ur10_a5" value="0.0" />
-  <property name="ur10_a6" value="0.0" />
+  <xacro:property name="ur10_a1" value="0.0" />
+  <xacro:property name="ur10_a2" value="-0.612" />
+  <xacro:property name="ur10_a3" value="-0.5723" />
+  <xacro:property name="ur10_a4" value="0.0" />
+  <xacro:property name="ur10_a5" value="0.0" />
+  <xacro:property name="ur10_a6" value="0.0" />
 
-  <property name="ur10_d1" value="0.1273" />
-  <property name="ur10_d2" value="0.0" />
-  <property name="ur10_d3" value="0.0" />
-  <property name="ur10_d4" value="0.163941" />
-  <property name="ur10_d5" value="0.1157" />
-  <property name="ur10_d6" value="0.0922" />
+  <xacro:property name="ur10_d1" value="0.1273" />
+  <xacro:property name="ur10_d2" value="0.0" />
+  <xacro:property name="ur10_d3" value="0.0" />
+  <xacro:property name="ur10_d4" value="0.163941" />
+  <xacro:property name="ur10_d5" value="0.1157" />
+  <xacro:property name="ur10_d6" value="0.0922" />
 
-  <property name="ur10_alpha1" value="${pi / 2}" />
-  <property name="ur10_alpha2" value="0.0" />
-  <property name="ur10_alpha3" value="0.0" />
-  <property name="ur10_alpha4" value="${pi / 2}" />
-  <property name="ur10_alpha5" value="${-pi / 2}" />
-  <property name="ur10_alpha6" value="0.0" />
+  <xacro:property name="ur10_alpha1" value="${pi / 2}" />
+  <xacro:property name="ur10_alpha2" value="0.0" />
+  <xacro:property name="ur10_alpha3" value="0.0" />
+  <xacro:property name="ur10_alpha4" value="${pi / 2}" />
+  <xacro:property name="ur10_alpha5" value="${-pi / 2}" />
+  <xacro:property name="ur10_alpha6" value="0.0" />
 
   <!-- q_home_offset -->
-  <property name="ur10_theta1" value="0.0" />
-  <property name="ur10_theta2" value="${-pi / 2}" />
-  <property name="ur10_theta3" value="0.0" />
-  <property name="ur10_theta4" value="${-pi / 2}" />
-  <property name="ur10_theta5" value="0.0" />
-  <property name="ur10_theta6" value="0.0" />
+  <xacro:property name="ur10_theta1" value="0.0" />
+  <xacro:property name="ur10_theta2" value="${-pi / 2}" />
+  <xacro:property name="ur10_theta3" value="0.0" />
+  <xacro:property name="ur10_theta4" value="${-pi / 2}" />
+  <xacro:property name="ur10_theta5" value="0.0" />
+  <xacro:property name="ur10_theta6" value="0.0" />
 
-  <propery name="joint_direction_1" value="1.0" />
-  <propery name="joint_direction_2" value="1.0" />
-  <propery name="joint_direction_3" value="-1.0" />
-  <propery name="joint_direction_4" value="1.0" />
-  <propery name="joint_direction_5" value="1.0" />
-  <propery name="joint_direction_6" value="1.0" />
+  <xacro:property name="joint_direction_1" value="1.0" />
+  <xacro:property name="joint_direction_2" value="1.0" />
+  <xacro:property name="joint_direction_3" value="-1.0" />
+  <xacro:property name="joint_direction_4" value="1.0" />
+  <xacro:property name="joint_direction_5" value="1.0" />
+  <xacro:property name="joint_direction_6" value="1.0" />
 
   <!-- Calibrated model -->
   <!-- Properties from calib.conf -->
-  <property name="delta_theta1" value="-0.0000197850701944219247" />
-  <property name="delta_theta2" value="0.000201462290104538797" />
-  <property name="delta_theta3" value="0.161845418395399482" />
-  <property name="delta_theta4" value="-0.161978431361046782" />
-  <property name="delta_theta5" value="-0.0000818201554555377376" />
-  <property name="delta_theta6" value="0.00000671758758682964541" />
+  <xacro:property name="delta_theta1" value="-0.0000197850701944219247" />
+  <xacro:property name="delta_theta2" value="0.000201462290104538797" />
+  <xacro:property name="delta_theta3" value="0.161845418395399482" />
+  <xacro:property name="delta_theta4" value="-0.161978431361046782" />
+  <xacro:property name="delta_theta5" value="-0.0000818201554555377376" />
+  <xacro:property name="delta_theta6" value="0.00000671758758682964541" />
 
-  <property name="delta_a1" value="0.000158446828127298446" />
-  <property name="delta_a2" value="-0.000365891870255152796" />
-  <property name="delta_a3" value="0.00859992418659250024" />
-  <property name="delta_a4" value="0.000185997155766058528" />
-  <property name="delta_a5" value="0.0000831112940804089751" />
-  <property name="delta_a5" value="0.0" />
+  <xacro:property name="delta_a1" value="0.000158446828127298446" />
+  <xacro:property name="delta_a2" value="-0.000365891870255152796" />
+  <xacro:property name="delta_a3" value="0.00859992418659250024" />
+  <xacro:property name="delta_a4" value="0.000185997155766058528" />
+  <xacro:property name="delta_a5" value="0.0000831112940804089751" />
+  <xacro:property name="delta_a6" value="0.0" />
 
-  <property name="delta_d1" value="0.000589172256288156282" />
-  <property name="delta_d2" value="-0.028897132408511942" />
-  <property name="delta_d3" value="-16.0423841961902234" />
-  <property name="delta_d4" value="16.0704712348591521" />
-  <property name="delta_d5" value="-0.0000989525525437184861" />
-  <property name="delta_d6" value="-0.000244457179784232648" />
+  <xacro:property name="delta_d1" value="0.000589172256288156282" />
+  <xacro:property name="delta_d2" value="-0.028897132408511942" />
+  <xacro:property name="delta_d3" value="-16.0423841961902234" />
+  <xacro:property name="delta_d4" value="16.0704712348591521" />
+  <xacro:property name="delta_d5" value="-0.0000989525525437184861" />
+  <xacro:property name="delta_d6" value="-0.000244457179784232648" />
 
-  <property name="delta_alpha1" value="0.000710613899062906285" />
-  <property name="delta_alpha2" value="-0.00296938046861772642" />
-  <property name="delta_alpha3" value="-0.00573144103189916678" />
-  <property name="delta_alpha4" value="-0.000192483211580940505" />
-  <property name="delta_alpha5" value="0.00030432728186813307" />
-  <property name="delta_alpha6" value="0.0" />
+  <xacro:property name="delta_alpha1" value="0.000710613899062906285" />
+  <xacro:property name="delta_alpha2" value="-0.00296938046861772642" />
+  <xacro:property name="delta_alpha3" value="-0.00573144103189916678" />
+  <xacro:property name="delta_alpha4" value="-0.000192483211580940505" />
+  <xacro:property name="delta_alpha5" value="0.00030432728186813307" />
+  <xacro:property name="delta_alpha6" value="0.0" />
 
   <!-- Arbitrary offsets for shoulder/elbow joints -->
   <xacro:property name="shoulder_offset" value="0.220941" />  <!-- measured from model -->
@@ -150,7 +150,7 @@
 
     <joint name="${prefix}shoulder_pan_joint" type="revolute">
       <parent link="${prefix}base_link" />
-      <child link = "${prefix}shoulder_link" />
+      <child link = "${prefix}shoulder_link_theta" />
       <origin xyz="0.0 0.0 ${ur10_d1 + delta_d1}" rpy="0.0 0.0 ${delta_theta1}" />
       <axis xyz="0 0 1" />
       <xacro:unless value="${joint_limited}">
@@ -162,6 +162,13 @@
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
 
+    <joint name="${prefix}shoulder_pan_joint_theta" type="fixed">
+      <parent link="${prefix}shoulder_link_theta" />
+      <child link = "${prefix}shoulder_link" />
+      <origin xyz="${ur10_a1 + delta_a1} 0.0 0.0" rpy="${ur10_alpha1 + delta_alpha1} 0.0 0.0" />
+    </joint>
+
+    <link name="${prefix}shoulder_link_theta" />
     <link name="${prefix}shoulder_link">
       <visual>
         <geometry>
@@ -183,8 +190,8 @@
 
     <joint name="${prefix}shoulder_lift_joint" type="revolute">
       <parent link="${prefix}shoulder_link" />
-      <child link = "${prefix}upper_arm_link" />
-      <origin xyz="0.0 0.0 0.0" rpy="0.0 ${-ur10_theta2} 0.0" />
+      <child link = "${prefix}upper_arm_link_theta" />
+      <origin xyz="0.0 0.0 ${ur10_d2 + delta_d2}" rpy="0.0 0.0 ${delta_theta2}" />
       <axis xyz="0 1 0" />
       <xacro:unless value="${joint_limited}">
         <limit lower="${-2.0 * pi}" upper="${2.0 * pi}" effort="330.0" velocity="2.16"/>
@@ -195,6 +202,13 @@
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
 
+    <joint name="${prefix}shoulder_lift_joint_theta" type="fixed">
+      <parent link="${prefix}upper_arm_link_theta" />
+      <child link = "${prefix}upper_arm_link" />
+      <origin xyz="${ur10_a2 + delta_a2} 0.0 0.0" rpy="${ur10_alpha2 + delta_alpha2} 0.0 0.0" />
+    </joint>
+
+    <link name="${prefix}upper_arm_link_theta" />
     <link name="${prefix}upper_arm_link">
       <visual>
         <geometry>
@@ -216,8 +230,8 @@
 
     <joint name="${prefix}elbow_joint" type="revolute">
       <parent link="${prefix}upper_arm_link" />
-      <child link = "${prefix}forearm_link" />
-      <origin xyz="0.0 ${delta_d2} ${-ur10_a2-delta_a2}" rpy="0.0 ${delta_theta2} 0.0" />
+      <child link = "${prefix}forearm_link_theta" />
+      <origin xyz="0.0 0.0 ${ur10_d3 + delta_d3}" rpy="0.0 0.0 ${delta_theta3}" />
       <axis xyz="0 1 0" />
       <xacro:unless value="${joint_limited}">
         <limit lower="${-pi}" upper="${pi}" effort="150.0" velocity="3.15"/>
@@ -226,8 +240,14 @@
         <limit lower="${elbow_joint_lower_limit}" upper="${elbow_joint_upper_limit}" effort="150.0" velocity="3.15"/>
       </xacro:if>
       <dynamics damping="0.0" friction="0.0"/>
+    </joint>    
+    <joint name="${prefix}elbow_joint_theta" type="fixed">
+      <parent link="${prefix}forearm_link_theta" />
+      <child link = "${prefix}forearm_link" />
+      <origin xyz="${ur10_a3 + delta_a3} 0.0 0.0" rpy="${ur10_alpha3 + delta_alpha3} 0.0 0.0" />
     </joint>
 
+    <link name="${prefix}forearm_link_theta" />
     <link name="${prefix}forearm_link">
       <visual>
          <geometry>
@@ -249,8 +269,8 @@
 
     <joint name="${prefix}wrist_1_joint" type="revolute">
       <parent link="${prefix}forearm_link" />
-      <child link = "${prefix}wrist_1_link" />
-      <origin xyz="0.0 ${delta_d3} ${-ur10_a3-delta_a3}" rpy="0.0 ${pi / 2.0 + delta_theta3} 0.0" />
+      <child link = "${prefix}wrist_1_link_theta" />
+      <origin xyz="0.0 0.0 ${ur10_d4 + delta_d4}" rpy="0.0 0.0 ${delta_theta4}" />
       <axis xyz="0 1 0" />
       <xacro:unless value="${joint_limited}">
         <limit lower="${-2.0 * pi}" upper="${2.0 * pi}" effort="54.0" velocity="3.2"/>
@@ -260,7 +280,13 @@
       </xacro:if>
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
+    <joint name="${prefix}wrist_1_joint_theta" type="fixed">
+      <parent link="${prefix}wrist_1_link_theta" />
+      <child link = "${prefix}wrist_1_link" />
+      <origin xyz="${ur10_a4 + delta_a4} 0.0 0.0" rpy="${ur10_alpha4 + delta_alpha4} 0.0 0.0" />
+    </joint>
 
+    <link name="${prefix}wrist_1_link_theta" />
     <link name="${prefix}wrist_1_link">
       <visual>
         <geometry>
@@ -282,8 +308,8 @@
 
     <joint name="${prefix}wrist_2_joint" type="revolute">
       <parent link="${prefix}wrist_1_link" />
-      <child link = "${prefix}wrist_2_link" />
-      <origin xyz="0.0 ${wrist_1_length} 0.0" rpy="0.0 0.0 0.0" />
+      <child link = "${prefix}wrist_2_link_theta" />
+      <origin xyz="0.0 0.0 ${ur10_d5 + delta_d5}" rpy="0.0 0.0 ${delta_theta5}" />
       <axis xyz="0 0 1" />
       <xacro:unless value="${joint_limited}">
         <limit lower="${-2.0 * pi}" upper="${2.0 * pi}" effort="54.0" velocity="3.2"/>
@@ -293,7 +319,13 @@
       </xacro:if>
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
+    <joint name="${prefix}wrist_2_joint_theta" type="fixed">
+      <parent link="${prefix}wrist_2_link_theta" />
+      <child link = "${prefix}wrist_2_link" />
+      <origin xyz="${ur10_a5 + delta_a5} 0.0 0.0" rpy="${ur10_alpha5 + delta_alpha5} 0.0 0.0" />
+    </joint>
 
+    <link name="${prefix}wrist_2_link_theta" />
     <link name="${prefix}wrist_2_link">
       <visual>
         <geometry>
@@ -315,8 +347,8 @@
 
     <joint name="${prefix}wrist_3_joint" type="revolute">
       <parent link="${prefix}wrist_2_link" />
-      <child link = "${prefix}wrist_3_link" />
-      <origin xyz="0.0 0.0 ${ur10_d5+delta_d5}" rpy="0.0 0.0 0.0" />
+      <child link = "${prefix}wrist_3_link_theta" />
+      <origin xyz="0.0 0.0 ${ur10_d6 + delta_d6}" rpy="0.0 0.0 ${delta_theta6}" />
       <axis xyz="0 1 0" />
       <xacro:unless value="${joint_limited}">
         <limit lower="${-2.0 * pi}" upper="${2.0 * pi}" effort="54.0" velocity="3.2"/>
@@ -326,7 +358,13 @@
       </xacro:if>
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
+    <joint name="${prefix}wrist_3_joint_theta" type="fixed">
+      <parent link="${prefix}wrist_3_link_theta" />
+      <child link = "${prefix}wrist_3_link" />
+      <origin xyz="${ur10_a6 + delta_a6} 0.0 0.0" rpy="${ur10_alpha6 + delta_alpha6} 0.0 0.0" />
+    </joint>
 
+    <link name="${prefix}wrist_3_link_theta" />
     <link name="${prefix}wrist_3_link">
       <visual>
         <geometry>
@@ -349,7 +387,7 @@
     <joint name="${prefix}ee_fixed_joint" type="fixed">
       <parent link="${prefix}wrist_3_link" />
       <child link = "${prefix}ee_link" />
-      <origin xyz="0.0 ${wrist_3_length} 0.0" rpy="0.0 0.0 ${pi/2.0}" />
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 ${pi/2.0}" />
     </joint>
 
     <link name="${prefix}ee_link">
@@ -379,7 +417,7 @@
     <!-- Frame coincident with all-zeros TCP on UR controller -->
     <link name="${prefix}tool0"/>
     <joint name="${prefix}wrist_3_link-tool0_fixed_joint" type="fixed">
-      <origin xyz="0 ${wrist_3_length} 0" rpy="${pi/-2.0} 0 0"/>
+      <origin xyz="0 0 0" rpy="${pi/-2.0} 0 0"/>
       <parent link="${prefix}wrist_3_link"/>
       <child link="${prefix}tool0"/>
     </joint>
