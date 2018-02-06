@@ -129,7 +129,7 @@
 		 wrist_2_lower_limit:=${-pi}    wrist_2_upper_limit:=${pi}
 		 wrist_3_lower_limit:=${-pi}    wrist_3_upper_limit:=${pi}">
 
-    <link name="${prefix}base_link" >
+    <link name="${prefix}base" >
       <visual>
         <geometry>
           <mesh filename="package://ur_description/meshes/ur10/visual/base.dae"/>
@@ -149,7 +149,7 @@
     </link>
 
     <joint name="${prefix}shoulder_pan_joint" type="revolute">
-      <parent link="${prefix}base_link" />
+      <parent link="${prefix}base" />
       <child link = "${prefix}shoulder_link_theta" />
       <origin xyz="0.0 0.0 ${ur10_d1 + delta_d1}" rpy="0.0 0.0 ${delta_theta1}" />
       <axis xyz="0 0 1" />
@@ -403,8 +403,8 @@
     <xacro:ur_arm_gazebo prefix="${prefix}" />
 
     <!-- ROS base_link to UR 'Base' Coordinates transform -->
-    <link name="${prefix}base"/>
-    <joint name="${prefix}base_link-base_fixed_joint" type="fixed">
+    <link name="${prefix}base_link"/>
+    <joint name="${prefix}base-base_link_fixed_joint" type="fixed">
       <!-- NOTE: this rotation is only needed as long as base_link itself is
                  not corrected wrt the real robot (ie: rotated over 180
                  degrees)
