@@ -50,56 +50,42 @@
   <xacro:property name="ur10_alpha3" value="0.0" />
   <xacro:property name="ur10_alpha4" value="${pi / 2}" />
   <xacro:property name="ur10_alpha5" value="${-pi / 2}" />
-  <xacro:property name="ur10_alpha6" value="0.0" />
-
-  <xacro:property name="joint_direction_1" value="1.0" />
-  <xacro:property name="joint_direction_2" value="1.0" />
-  <xacro:property name="joint_direction_3" value="-1.0" />
-  <xacro:property name="joint_direction_4" value="1.0" />
-  <xacro:property name="joint_direction_5" value="1.0" />
-  <xacro:property name="joint_direction_6" value="1.0" />
+  <xacro:property name="ur10_alpha6" value="0.0" /> 
 
   <!-- Calibrated model -->
-  <!-- Properties from calib.conf -->
-  <xacro:property name="delta_theta1" value="-0.0000197850701944219247" />
-  <xacro:property name="delta_theta2" value="0.000201462290104538797" />
-  <xacro:property name="delta_theta3" value="0.161845418395399482" />
-  <xacro:property name="delta_theta4" value="-0.161978431361046782" />
-  <xacro:property name="delta_theta5" value="-0.0000818201554555377376" />
-  <xacro:property name="delta_theta6" value="0.00000671758758682964541" />
+  <!-- Properties from calib.conf , include a file in your robot xacro under this include, to overwrite these values. -->
+  <xacro:property name="delta_theta1" value="0" />
+  <xacro:property name="delta_theta2" value="0" />
+  <xacro:property name="delta_theta3" value="0" />
+  <xacro:property name="delta_theta4" value="0" />
+  <xacro:property name="delta_theta5" value="0" />
+  <xacro:property name="delta_theta6" value="0" />
 
-  <xacro:property name="delta_a1" value="0.000158446828127298446" />
-  <xacro:property name="delta_a2" value="-0.000365891870255152796" />
-  <xacro:property name="delta_a3" value="0.00859992418659250024" />
-  <xacro:property name="delta_a4" value="0.000185997155766058528" />
-  <xacro:property name="delta_a5" value="0.0000831112940804089751" />
-  <xacro:property name="delta_a6" value="0.0" />
+  <xacro:property name="delta_a1" value="0" />
+  <xacro:property name="delta_a2" value="0" />
+  <xacro:property name="delta_a3" value="0" />
+  <xacro:property name="delta_a4" value="0" />
+  <xacro:property name="delta_a5" value="0" />
+  <xacro:property name="delta_a6" value="0" />
 
-  <xacro:property name="delta_d1" value="0.000589172256288156282" />
-  <xacro:property name="delta_d2" value="-0.028897132408511942" />
-  <xacro:property name="delta_d3" value="-16.0423841961902234" />
-  <xacro:property name="delta_d4" value="16.0704712348591521" />
-  <xacro:property name="delta_d5" value="-0.0000989525525437184861" />
-  <xacro:property name="delta_d6" value="-0.000244457179784232648" />
+  <xacro:property name="delta_d1" value="0" />
+  <xacro:property name="delta_d2" value="0" />
+  <xacro:property name="delta_d3" value="0" />
+  <xacro:property name="delta_d4" value="0" />
+  <xacro:property name="delta_d5" value="0" />
+  <xacro:property name="delta_d6" value="0" />
 
-  <xacro:property name="delta_alpha1" value="0.000710613899062906285" />
-  <xacro:property name="delta_alpha2" value="-0.00296938046861772642" />
-  <xacro:property name="delta_alpha3" value="-0.00573144103189916678" />
-  <xacro:property name="delta_alpha4" value="-0.000192483211580940505" />
-  <xacro:property name="delta_alpha5" value="0.00030432728186813307" />
-  <xacro:property name="delta_alpha6" value="0.0" />
+  <xacro:property name="delta_alpha1" value="0" />
+  <xacro:property name="delta_alpha2" value="0" />
+  <xacro:property name="delta_alpha3" value="0" />
+  <xacro:property name="delta_alpha4" value="0" />
+  <xacro:property name="delta_alpha5" value="0" />
+  <xacro:property name="delta_alpha6" value="0" />
 
   <!-- Arbitrary offsets for shoulder/elbow joints -->
   <xacro:property name="shoulder_offset" value="0.220941" />  <!-- measured from model -->
   <xacro:property name="elbow_offset" value="-0.1719" /> <!-- measured from model -->
 
-  <!-- link lengths used in model -->
-  <xacro:property name="shoulder_height" value="${ur10_d1}" />
-  <xacro:property name="upper_arm_length" value="${-ur10_a2}" />
-  <xacro:property name="forearm_length" value="${-ur10_a3}" />
-  <xacro:property name="wrist_1_length" value="${ur10_d4 - elbow_offset - shoulder_offset}" />
-  <xacro:property name="wrist_2_length" value="${ur10_d5}" />
-  <xacro:property name="wrist_3_length" value="${ur10_d6}" />
 
   <xacro:macro name="cylinder_inertial" params="radius length mass *origin">
     <inertial>
